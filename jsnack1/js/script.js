@@ -12,9 +12,13 @@ for(let i=0; i<=9; i++){
    
 }
 
+let sum=0;
 
-const somma=(fifi[0]+fifi[1]+fifi[2]+fifi[3]+fifi[4]+fifi[5]+fifi[6]+fifi[7]+fifi[8]+fifi[9])
+for( let i=0; i<fifi.length; i++){
+   sum+= fifi[i]
+}
 
-resultElement.innerHTML=`<h1 class="text-danger text-center m-5">IL TOTALE DELLE TUE SCELTE È ${somma} </h1>`
+
+resultElement.innerHTML=`<h1 class="text-danger text-center m-5">IL TOTALE DELLE TUE SCELTE È ${sum} </h1>`
 
 
