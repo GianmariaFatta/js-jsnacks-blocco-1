@@ -4,19 +4,17 @@
 
 const resultElement=document.getElementById("result");
 
-const somma = []
+const fifi=[]
 
-for(i=1; i<=10; i++){
-    const userNumber = parseInt(prompt("dammi un numero"))
-
-    const sum = 0
-
-    sum+=userNumber[i]
-
-    console.log(userNumber)
-
+for(let i=0; i<=9; i++){
+   const userNumber=parseInt(prompt("dammi un numero"))
+   fifi.push(userNumber)
+   
 }
 
 
+const somma=(fifi[0]+fifi[1]+fifi[2]+fifi[3]+fifi[4]+fifi[5]+fifi[6]+fifi[7]+fifi[8]+fifi[9])
+
+resultElement.innerHTML=`<h1 class="text-danger text-center m-5">IL TOTALE DELLE TUE SCELTE È ${somma} </h1>`
 
 
